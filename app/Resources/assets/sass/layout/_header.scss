@@ -1,0 +1,15 @@
+.header {
+  height: 60px;
+  width: 100%;
+
+  &-content {
+    @include shadow(0 1px 3px $shadow, 0 1px 2px $shadow,
+    false, false);
+    background-color: $main-color;
+    display: flex;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+}

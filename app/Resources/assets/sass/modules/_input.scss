@@ -1,0 +1,36 @@
+.input {
+  border: 1px solid $font-color;
+  border-radius: 2px;
+  font-size: 12px;
+  height: 43px;
+  margin-right: 20px;
+  padding: 5px 12px;
+  transition: border .3s ease;
+  width: 300px;
+
+  @media (max-width: 540px) {
+    width: 150px;
+  }
+
+  &::-webkit-input-placeholder { // Chrome/Opera/Safari
+    color: $placeholder;
+  }
+
+  &::-moz-placeholder { // Firefox 19+
+    color: $placeholder;
+  }
+
+  &:-ms-input-placeholder { // IE 10+
+    color: $placeholder;
+  }
+
+  &:-moz-placeholder { // Firefox 18-
+    color: $placeholder;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $logo-first;
+    outline: none;
+  }
+}

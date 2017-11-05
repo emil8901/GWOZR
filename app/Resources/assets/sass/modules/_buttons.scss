@@ -1,0 +1,21 @@
+.button {
+  &-link {
+    @extend %button;
+    background-color: $logo-first;
+    bottom: 25px;
+    display: block;
+    position: absolute;
+    width: calc(100% - 50px);
+
+    &:hover,
+    &:focus {
+      background-color: $logo-second;
+    }
+  }
+
+  &-submit {
+    @extend %button;
+    background-color: $logo-first;
+    display: inline-block;
+  }
+}

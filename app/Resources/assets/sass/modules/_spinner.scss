@@ -1,0 +1,33 @@
+.spinner {
+  background-color: $background-opacity;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 60px;
+  transition: all .3s ease;
+  width: 100%;
+  z-index: 10;
+
+  &__bounce1,
+  &__bounce2 {
+    animation: sk-bounce 2s infinite ease-in-out;
+    background-color: $logo-first;
+    border-radius: 50%;
+    height: 50px;
+    left: 50%;
+    opacity: .6;
+    position: absolute;
+    top: calc(50% - 50px);
+    width: 50px;
+  }
+
+  &__bounce2 {
+    animation-delay: -1s;
+  }
+
+  @keyframes sk-bounce {
+    0%, 100% { transform: scale(0); }
+    50% { transform: scale(1); }
+  }
+}
