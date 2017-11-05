@@ -1,0 +1,17 @@
+@mixin shadow($shadow1, $shadow2:false, $shadow3:false, $shadow4:false) {
+
+  $default: $shadow1;
+  @if $shadow2 { $default: $shadow1, $shadow2; }
+
+
+  $hover: $shadow3;
+  @if shadow4 { $hover: $shadow3, $shadow4; }
+
+  box-shadow: $default;
+  transition: all .3s cubic-bezier(.25, .8, .25, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: $hover;
+  }
+}

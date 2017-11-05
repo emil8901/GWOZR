@@ -1,0 +1,20 @@
+%button {
+  @include shadow(false, false,
+  0 3px 11px $shadow, 0 4px 3px $shadow);
+  border-radius: 2px;
+  border-width: 0;
+  color: $font-color;
+  outline: none;
+  overflow: hidden;
+  padding: 12px 24px;
+  position: relative;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background-color: $logo-second;
+    box-shadow: 0 3px 11px $shadow, 0 4px 3px $shadow;
+    color: $font-hover;
+    text-decoration: none;
+  }
+}
